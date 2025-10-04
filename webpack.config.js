@@ -25,6 +25,7 @@ module.exports = {
     devServer: {
         static: { directory: path.join(__dirname, 'dist') },
         port: 3000,  // Added port for devServer
+        host: 'localhost',  // Specify host for devServer
         hot: true  // Enable hot module replacement
     }
 };
