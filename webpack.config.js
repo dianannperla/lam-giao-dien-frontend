@@ -10,7 +10,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx?$/, 
+                test: /.jsx?$/, 
                 exclude: /node_modules/, 
                 use: {
                     loader: 'babel-loader',
@@ -24,6 +24,7 @@ module.exports = {
     },
     devServer: {
         static: { directory: path.join(__dirname, 'dist') },
-        port: 3000  // Added port for devServer
+        port: 3000,  // Added port for devServer
+        hot: true  // Enable hot module replacement
     }
 };
