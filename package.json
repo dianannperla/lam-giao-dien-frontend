@@ -8,7 +8,7 @@
     "start": "webpack serve --mode development"
   },
   "keywords": ["react", "vue", "frontend", "ui-components"],
-  "author": "Updated Author Name",
+  "author": "New Author Name",
   "license": "MIT",
   "dependencies": {
     "react": "^18.2.0",
