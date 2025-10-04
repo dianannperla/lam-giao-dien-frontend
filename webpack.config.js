@@ -5,12 +5,12 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/'  // Updated publicPath to be a string instead of resolving
+        publicPath: '/'  // Set the publicPath to root for proper asset loading
     },
     module: {
         rules: [
             {
-                test: /\.jsx?$/, 
+                test: /\\.jsx?$/, 
                 exclude: /node_modules/, 
                 use: {
                     loader: 'babel-loader',
